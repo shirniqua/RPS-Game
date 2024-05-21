@@ -6,4 +6,9 @@ function getComputerChoice() {
 }
 
 
-console.log(getComputerChoice());
+function getHumanChoice () {
+    let choice = prompt("Choose your weapon (rock, paper or scissors)");
+    return choice;
+}
+
+console.log(getHumanChoice());
