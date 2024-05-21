@@ -13,7 +13,7 @@ function getHumanChoice () {
     return choice;
 }
 
-function playRound (getComputerChoice, getHumanChoice) {
+function playRound () {
     let comChoice = getComputerChoice();
     let humChoice = getHumanChoice();
     humChoice = humChoice.toLowerCase();
@@ -29,4 +29,6 @@ function playRound (getComputerChoice, getHumanChoice) {
         humanScore += 1;
     }
 }
+
+console.log(playRound());
 
