@@ -8,10 +8,14 @@ function getComputerChoice() {
     return weapon[num];
 }
 
-
 function getHumanChoice () {
     let choice = prompt("Choose your weapon (rock, paper or scissors)");
     return choice;
 }
 
+function playRound (getComputerChoice, getHumanChoice) {
+    let comChoice = getComputerChoice();
+    let humChoice = getHumanChoice();
+    humChoice = humChoice.toLowerCase();
+}
 
