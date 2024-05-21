@@ -17,5 +17,16 @@ function playRound (getComputerChoice, getHumanChoice) {
     let comChoice = getComputerChoice();
     let humChoice = getHumanChoice();
     humChoice = humChoice.toLowerCase();
+    if (comChoice == humChoice){
+        console.log("Draw! You both chose " + comChoice);
+    }
+    else if (((comChoice == "paper") && (humChoice == "rock")) || ((comChoice == "rock") && (humChoice == "scissors")) || ((comChoice == "scissors") && (humChoice == "paper"))){
+        console.log("You lose! " +comChoice + " beats " +humChoice);
+        computerScore += 1;
+    }
+    else {
+        console.log("You win! " +humChoice +" beats " +comChoice);
+        humanScore += 1;
+    }
 }
 
